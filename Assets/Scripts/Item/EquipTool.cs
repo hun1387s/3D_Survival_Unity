@@ -15,14 +15,24 @@ public class EquipTool : Equip
     public bool doesDealDamage;
     public int damage;
 
+    Animator animator;
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnAttackInput()
     {
-        
+        if (!attacking)
+        {
+            attacking = true;
+            animator.SetTrigger("Attack");
+            Invoke("OnCanAttack", attackRate);
+        }
+    }
+
+    void OnCanAttack()
+    {
+        attacking = false;
     }
 }

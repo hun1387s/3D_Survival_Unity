@@ -56,4 +56,13 @@ public class PlayerCondition : MonoBehaviour, IDamagable
         health.Subtract(damage);
         onTakeDamage?.Invoke();
     }
+
+    public bool UseStamina(float value)
+    {
+        if (stamina.curValue - value < 0f)
+            return false;
+        
+        stamina.Subtract(value);
+        return true;
+    }
 }

@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1801702351181559105}
   - component: {fileID: 2226222208351382696}
   m_Layer: 8
-  m_Name: Eqip_Ax
+  m_Name: Equip_Ax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRate: 0.8
   attackDistance: 1
+  useStamina: 10
   doesGatherResources: 1
   doesDealDamage: 0
   damage: 0

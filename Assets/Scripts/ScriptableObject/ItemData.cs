@@ -16,6 +16,7 @@ public enum CounsumableType
     Hunger,
 }
 
+[System.Serializable]
 public class ItemDataConsumable
 {
     public CounsumableType type;
@@ -39,4 +40,6 @@ public class ItemData : ScriptableObject
     [Header("Consumable")]
     public ItemDataConsumable[] consumables;
 
+    [Header("Equip")]
+    public GameObject equipPrefab;
 }

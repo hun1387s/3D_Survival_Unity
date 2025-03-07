@@ -782,8 +782,55 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3015481875272181996, guid: 302f9270c40ea514c921b423eea7347c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 153976140}
+    - targetCorrespondingSourceObject: {fileID: 3015481875272181996, guid: 302f9270c40ea514c921b423eea7347c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 153976142}
   m_SourcePrefab: {fileID: 100100000, guid: 302f9270c40ea514c921b423eea7347c, type: 3}
+--- !u!1 &153976139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3015481875272181996, guid: 302f9270c40ea514c921b423eea7347c, type: 3}
+  m_PrefabInstance: {fileID: 153976138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &153976140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153976139}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 30, z: 10}
+  m_Center: {x: 0, y: -16, z: 0}
+--- !u!114 &153976142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153976139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce62c29ae02280345833f8fa62912f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  damageRate: 0.3
+  delayTime: 3
 --- !u!1 &154509967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2230,7 @@ MonoBehaviour:
   curValue: 0
   startValue: 400
   maxValue: 500
-  passiveValue: 20
+  passiveValue: 2
   uiBar: {fileID: 154509969}
 --- !u!1001 &682032539
 PrefabInstance:
@@ -2612,9 +2659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97312ea099b79dc45bb5d81cd3d7b932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.4
-  fullDayLength: 30
-  startTime: 0.4
+  time: 0.2
+  fullDayLength: 300
+  startTime: 0.2
   noon: {x: 90, y: 0, z: 0}
   sun: {fileID: 705507994}
   sunColor:
@@ -3046,6 +3093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   damageRate: 1
+  delayTime: 0
 --- !u!1001 &873998169
 PrefabInstance:
   m_ObjectHideFlags: 0

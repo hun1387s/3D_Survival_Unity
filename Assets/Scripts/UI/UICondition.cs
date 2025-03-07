@@ -13,10 +13,4 @@ public class UICondition : MonoBehaviour
     {
         CharacterManager.Instance.Player.condition.uiCondition = this;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

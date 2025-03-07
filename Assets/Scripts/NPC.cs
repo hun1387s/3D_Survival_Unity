@@ -215,7 +215,7 @@ public class NPC : MonoBehaviour, IDamagable
 
     IEnumerator DamageFlash()
     {
-        for (int i = 0; i<meshRenderers.Length; i++)
+        for (int i = 0; i < meshRenderers.Length; i++)
         {
             meshRenderers[i].material.color = new Color(1.0f, 0.6f, 0.6f);
         }

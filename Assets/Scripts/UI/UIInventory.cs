@@ -51,12 +51,6 @@ public class UIInventory : MonoBehaviour
         ClearSelectedItemWnd();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void ClearSelectedItemWnd()
     {
         selectedItemName.text = string.Empty;
@@ -115,8 +109,8 @@ public class UIInventory : MonoBehaviour
         // ¾ø´Ù¸é
         ThrowItem(data);
         CharacterManager.Instance.Player.itemData = null;
-
     }
+
     void UpdateUI()
     {
         for (int i = 0; i<slots.Length; i++)

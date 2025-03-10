@@ -2540,6 +2540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759132946}
   - component: {fileID: 759132948}
+  - component: {fileID: 759132949}
   m_Layer: 6
   m_Name: EquipCamera
   m_TagString: Untagged
@@ -2613,6 +2614,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &759132949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759132945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ecbf88653a47f4abe888f500873108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_replacementShader: {fileID: 4800000, guid: f8227464db50bcc49a76c427a700b48f, type: 3}
 --- !u!1 &775257017
 GameObject:
   m_ObjectHideFlags: 0
